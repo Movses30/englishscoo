@@ -28,4 +28,4 @@ print("-------------------------------")
 reslist = lit2list[0]+ lit2list[1]+ lit2list[2]
 reslist.append("avelacav")
 print(lit2list)
-print(reslist)
+print(type(reslist))

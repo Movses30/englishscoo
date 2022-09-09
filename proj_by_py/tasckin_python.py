@@ -100,8 +100,10 @@ else:
 '''
 
 # task 9
-
-
+'''
+Պատկերացրու, որ ունես մի խանութ, որտեղ վաճառում ես ընդամենը 10
+ապրանք։ Այդ ապրանքներից յուրաքանչյուրի ճշգրիտ անվանումը գրելից(կապ
+չունի մեծատա՞ռ, թե՞ փոքրատառ) էկրանին պիտի տպվի ապրանքի գինը
 
 
 product_name = input("product name  ") 
@@ -124,3 +126,13 @@ elif product_name == "potatoes":
     print(produqt["potatoes"])
 else:
     print("end")
+    '''
+#product_name = input()
+product = {
+    "l":100,
+    "b":110,
+    "c":130,
+    "d":140
+}
+for i in product:
+    print(product["d"])

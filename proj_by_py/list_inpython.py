@@ -16,16 +16,6 @@ lestelement = eges.pop() # ir mej pahum e verjin element@
 print(lestelement) # == 36
 '''
 
-lit2list = [
-    [],  #incpes avelacnel value 0 indexin
-    [1,2,3,4,5,6,7,8,9],
-    ["m","o","vova","s","e","s"]
-]
-#print(lit2list[2][2]) #== vova
-print(lit2list)
-print("-------------------------------")
-#lit2list.append("avelacav")
-reslist = lit2list[0]+ lit2list[1]+ lit2list[2]
-reslist.append("avelacav")
-print(lit2list)
-print(type(reslist))
+numbers = [1, 2, 5, 6, 3, 1, 9, 6, 5, 7, 9.8]
+set(numbers)
+print(numbers)

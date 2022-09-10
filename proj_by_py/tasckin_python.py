@@ -198,11 +198,12 @@ while True:
     else:
         print("Неверный знак операции!")
 '''
-#task 11 ognecin
+#task 10 ognecin
 
-'''first_number = int(input("number1:"))
+'''
+first_number = float(input("number1:"))
 Arithmetic_operators = input("Arithmetic operators: +, -, *, /, **, //, %:")
-second_number = int(input("number2:"))
+second_number = float(input("number2:"))
 #ArithmeticOperators1 = ("+", "-", "*", "/", "**", "//", "%")
 ArithmeticOperators = {
 "+":(f"{first_number + second_number}"),
@@ -231,7 +232,67 @@ else:
         "%":(f"{first_number % second_number}")
         }
     }
-    print(ArithmeticOperators[Arithmetic_operators])'''
+    print(ArithmeticOperators[Arithmetic_operators])
+
+'''
+     
+     #task 11
+'''Գրիր ծրագիր, որտեղ 50-350 միջակայքում կտպվի այն թվերը, որոնք զույգ են, եւ
+բաժանվում են 7-ի։
 
 
-                                                             
+a , b = 50 , 350
+c = 20
+while a < b:
+    a += 1
+    if a % 2 ==0 and a % 7 ==0:
+        print(a)
+
+'''
+
+
+
+#m tasks 12
+
+'''Գրիր ծրագիր, որը կտպի 100-150 միջակայքի զույգ թվերը՝ հակառակ
+հաջորդականությամբ։
+
+b = 150
+first_num = 100
+while first_num < b:
+    b -= 1
+    if b % 2 == 0:
+     print(b)
+'''
+# task 13
+'''Написать функцию is_prime, принимающую 1 аргумент — число от 0 до 1000,
+ и возвращающую True, если оно простое, и False - иначе.
+
+def is_prime(is_prime_num):
+ 
+    if is_prime_num % 2 == 1:
+     if is_prime_num > 0:
+        if is_prime_num < 1000:
+         return True
+    else:
+        return False       
+print(is_prime(9))
+
+'''
+
+'''Написать функцию date, принимающую 3 аргумента — день, месяц и год. 
+Вернуть True, если такая дата есть в нашем календаре, и False иначе. '''
+
+def date(dey,mont,year):
+ if dey <= 31 and dey > 0:
+   if mont <= 12 and mont > 0:
+     if year > 0 :
+       return True
+     else:           # None veradarcnum e None folse i poxaren  ?????????????????????????????????????????????????????????????????
+      print(False)
+      return False
+    
+print(date(29,2,11992))
+
+
+

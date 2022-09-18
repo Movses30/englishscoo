@@ -17,5 +17,5 @@ print(lestelement) # == 36
 '''
 
 numbers = [1, 2, 5, 6, 3, 1, 9, 6, 5, 7, 9.8]
-set(numbers)
-print(numbers)
+print(type(numbers))
+print(numbers.__eq__(0))

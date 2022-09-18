@@ -34,3 +34,4 @@ for i in my_dict.values():
     1 + i
 print(res)
 
+print(my_dict.setdefault(1))

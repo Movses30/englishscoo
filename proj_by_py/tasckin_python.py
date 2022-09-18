@@ -281,9 +281,9 @@ print(is_prime(9))
 '''
 
 '''Написать функцию date, принимающую 3 аргумента — день, месяц и год. 
-Вернуть True, если такая дата есть в нашем календаре, и False иначе. '''
+Вернуть True, если такая дата есть в нашем календаре, и False иначе. 
 
-def date(dey,mont,year):
+def date(dey,mont,year): 
  if dey <= 31 and dey > 0:
    if mont <= 12 and mont > 0:
      if year > 0 :
@@ -293,6 +293,369 @@ def date(dey,mont,year):
       return False
     
 print(date(29,2,11992))
+'''
+# task 14
+'''
+Написать функцию arithmetic, принимающую 3 аргумента: первые 2 - числа, третий - операция, 
+которая должна быть произведена над ними. 
+Если третий аргумент +, сложить их; если —, то вычесть; * — умножить; / — разделить (первое на второе).
+ В остальных случаях вернуть строку "Неизвестная операция".
+'''
+'''
+def arithmetic(a,b,x):
+    if x == "-": #and a == int() or a == float() and b == int() or float():
+        return a - b
+    if x == "+" :# a == int() or float():
+        return a + b
+    if x == "/" :# a == int() or float():
+        return a / b
+    if x == "*" :# a == int() or float():
+        return a * b  
+    else:
+        return "error"
+
+print(arithmetic(2,8,"-"))
+'''
+#????????????????????????????????????????????????????????????????????????????????????????????????
+'''
+18:36
+File "/home/mos/Desktop/python/proj_by_py/tasckin_python.py", line 309, in arithmetic
+    return a + b
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+18:37
+error  է տալիս բայց ես գրել էմ որ հակառակ դեպքւմ տպի
+18:37
+else:
+        return "Неизвестная операция"
+18:38
+ով կա python ից լավ ՞՞՞՞'''
 
 
 
+'''Написать функцию season, принимающую 1 аргумент — номер месяца (от 1 до 12), и возвращающую время года, 
+которому этот месяц принадлежит (зима, весна, лето или осень).
+
+
+def season(month_1):
+   if month_1 > 0 and month_1 < 12:
+    if month_1 <= 3:
+        return "cmer"
+    elif month_1 <=6:
+        return "garun"
+    elif month_1 <=9:
+        return "amar"
+    elif month_1 <=12:
+        return "ashun"
+    else:
+        return "tenc amis chka"
+
+print(season(6))
+'''
+
+# taask 15
+'''
+Напишите программу на Python для подсчета количества символов (частоты символов) в строке.  
+Пример строки: google.com '
+Ожидаемый результат: {'o': 3, 'g': 2, '.': 1, 'e': 1, 'l': 1, 'm': 1, 'c': 1} 
+'''
+# ???????????????????????????????????????????????????????????????????????
+#  *.fromkeys() Создайте новый словарь с ключами из итерации и значениями, установленными в значение.
+#   *.set() Создайте неупорядоченную коллекцию уникальных элементов. չկրկնվող էլէմէնտ topule
+'''
+str_1 = "google.com"
+count_1 = dict().fromkeys(set(str_1))
+
+for i in count_1.keys():
+    print(i)
+    count_1[i] = str_1.count(i)
+
+
+print(count_1) # ==  {'e': 1, 'g': 2, 'l': 1, 'o': 3, '.': 1, 'c': 1, 'm': 1}
+'''
+# task 16
+
+'''Напишите программу на Python, которая принимает радиус круга от пользователя и 
+вычисляет площадь.  
+Пример вывода:г = 1,1
+Площадь = 3.8013271108436504 
+  S = π × r^^2 
+
+r =float(input("print in radius:"))
+s = 3.14 * r * r
+print(s)
+'''
+# task 17
+
+'''Напишите программу на Python, которая принимает имя и фамилию пользователя и печатает 
+их в обратном порядке с пробелом между ними.
+nameinUs = input("what is your name ?")
+srnume = input("what is your frstname?")
+print(nameinUs[::-1] +" "+srnume[::-1])
+
+'''
+#task 18
+
+'''6. Напишите программу на Python, которая принимает от пользователя последовательность чисел,
+ разделенных запятыми, и генерирует список и кортеж с этими числами.  
+Примерные данные: 3, 5, 7, 23 
+
+
+list_1 =input("ok")
+liste = list_1.split(",")
+tapyle = tuple(liste)
+print("list :",liste)
+print("topule :", tapyle)
+'''
+
+# task 19
+'''Напишите программу на Python для отображения первого и 
+последнего цветов из следующего списка.  
+color_list = ["Красный", "Зеленый", "Белый", "Черный"] 
+
+color_list = ["Красный", "Зеленый", "Белый", "Черный"] 
+print(color_list[0::3])
+
+'''
+#   home worck
+'''Գրել ծրագիր, որը էկրանին կտպի հետևյալ պատկերը (օգտագործել ցիկլեր)․
+
+from math import radians
+
+
+sinbul = "*"
+res = ""
+
+for i in  sinbul:
+    for j in range(6): 
+     res = i * j 
+     print(res)
+     
+     '''
+'''Տրված է list տիպի հետևյալ փոփոխականը․
+my_list = [4, 2, 18, 6, 21, 5]
+Գրել ծրագիր, որը կփոխարինի նրա էլեմենտների արժեքները իրենց խորանարդներով։'''
+
+
+'''Գրել ծրագիր, որը օգտատիրոջից կստանա ամբողջ թիվ, և, ցիկլի միջոցով, առանց 
+built in ֆունկցիաներ օգտագործելու կհաշվի թվի թվանշանների քանակը։
+
+
+num = input("write numbr:")
+count = 0
+for i in  num:
+   count += 1 
+print(count)  
+
++'''
+'''Տրված է հետևյալ list տիպի փոփոխականը․
+nums = [1, -8, 2, 10, 6, -3, 4, -12, -15, 5, 6]
+Հաշվել այդ փոփոխականի բացասական արժեքով տարրերի միջին թվաբանականը։
+
+res_len = 0
+res =0
+nums = [1, -8, 2, 10, 6, -3, 4, -12, -15, 5, 6]
+for i in  nums:
+    if i < 0:
+     res += i 
+     res_len += 1
+     res / res_len
+
+print(res / res_len)
+
+'''
+
+
+
+
+'''Օգտատերը մուտքագրել է string: Գրել ծրագիր, որի արդյունքում ցիկլը կընդհատվի, 
+եթե տրված string-ի էլեմենտներից որևէ մեկը սիմվոլ (%, ^, &, @, !, etc.) լինի 
+(կարելի է օգտագործել դրանց թվային արժեքները)։
+my_str = input("print string:")
+sinbul = ["%", "^", "&", "@", "!"]
+for i in my_str:
+    for j in sinbul:
+        if i == j:
+            break
+                                          ??????????????????????????????????????????????????????????????????????????????
+print(f"արգելված նսան չկա {my_str} ի մեջ ))")
+
+
+a = int(input("input number:"))
+my_list =[]
+while a > 0:
+    a = a / 2
+    a - 1
+    if a % 2 == 0:
+        a - 1
+        my_list.append(0)
+    else:
+        my_list.append(1)
+    #a = a / 2
+print(my_list)
+'''
+
+'''
+
+x = input("print number:")
+x = int(x)
+for i  in range(10):
+    res = x * i
+    print(f"{x} x {i} = {res}")# f "{}" տպել եմ քրժեները 
+    '''
+'''
+my_number = int(input()) 
+ 
+my_binarry = ''  # ստեղծուն ենք փոփխ str "" 
+ 
+while my_number > 0: # ցիկլին տալիս ենք պաըման 
+    my_binarry = str(my_number % 2) + my_binarry #my_binarry ին վերագրում ենք my_number ը բաժանած(%) 2 + ""
+    my_number = my_number // 2 # ստանւմ ենք ամբողջ մասը 14 // 8 == 1
+ 
+print(my_binarry)
+print(14 // 8)'''
+'''
+to_print="*****"
+index=0
+n=1
+while index < 5:
+    to_print_1=to_print[index]* n
+    print (to_print_1.rjust(5," "))
+    index += 1
+    n+=1
+
+'''
+'''Գրել ֆունկցիա, որը որպես արգումենտ կստանա list և կվերադարձնի list-ի տարրերի գումարը
+
+my_listsum = 0
+def my_list_addfunc (x):
+    for i in x:
+        global my_listsum
+        my_listsum += i 
+    return my_listsum
+        
+print(my_list_addfunc(x = [5,7,8,9]))
+
+#print(my_listsum)
+'''
+
+'''Գրել ֆունկցիա, որը որպես արգումենտ կստանա string և կտպի string֊ը շրջված։
+def my_str_revers_func(str1):
+   return str1[::-1]
+print(my_str_revers_func("movses seyranyan"))
+
+count_1 = 0
+add_arg = 0
+def sum_args_func(*args):
+    global add_arg , count_1
+    for i in args:
+        add_arg += i
+        if i:
+            count_1 += 1
+        print(count_1)
+    return add_arg / count_1
+print(sum_args_func(1,2,3,99,98))
+
+''' # 1 1 2 3 5 8 13 21 34 55
+
+'''Գրել ֆունկցիա , որը կտպի Ֆիբոնաչիի հաջորդականությունը մինչև n-րդ անդամը
+
+
+
+def fibanachi(number):
+    # քանի որ ֆիբ հաջորդականւթյան մեջ յոըրաքանչըուր հաջորդ թիվ նախորդ երկուսի գումարն է 
+    # մեզ պետք է երկու փոփոխական որոնք իրենցից կներկայացնեն նախ ֆիբ առաջին երկու թվերը <<1,1>>  
+    # հետո ամեն իտեռացիաց հետո արժեքները կփոխարինվի իր հաջորդ թվով 
+    
+    fib1 = 1 
+    fib2 = 1  
+    print(fib1,fib2,end=" ") # 
+    while number > 2: # F(n) = F(n-1) + F(n-2) ֆիբանա(թիվ)(55) = ֆիբթիվ(նախորդ թիվ)(34) + ֆիբթիվ(նախորդի նախորդ)(21) 
+        temp = fib2 
+        fib2 = fib1 + fib2
+        fib1 = temp
+        number -= 1 
+        print(fib2,end=" ")
+        
+print(fibanachi(10))
+'''
+
+
+'''Գրել ֆունկցիա, որը արգումենտում կստանա integer, կբազմապատկի տրված թվի
+ թվանշանները իրար այնքան ժամանակ, քանի դեռ արդյունքը 
+չի ստացվել միանիշ թիվ։ Վերադարձնել ստացված արդյունքը և տպել։
+
+
+def gi(number):
+  if number > 0 and number < 10:
+    return number
+  res = 1
+  my_list = [] #for i in f:
+  while number > 0:
+
+    my_float = number  % 10
+    number = number // 10
+    my_list += [my_float] 
+  for i in  my_list:
+    res *= i
+  
+  return gi(res)
+ 
+print(gi(90))
+
+'''
+
+'''Գրել ֆունկցիա, որը կստանա n քանակի արգումենտ (integer տեսակի) և կվերադարձնի
+ այդ արգումենտների գումարի բացարձակ արժեքը
+ (չօգտագործել sum(), abs() build-in ֆունկցiաները)։
+
+def sum(*integer):
+    res = 0
+    for i in integer:
+        res += i
+    if res < 0:
+        return -res 
+    else:
+        return res
+print(sum(1,2,4,-8))
+
+'''
+'''
+
+ Գրել ֆունկցիա՝ decoder, որը որպես արգումենտ ստանում է բինարի (երկուական համակարգով) տեքստ և 
+ վերափոխում է սովորական/ընթեռնելի տեսքտի։ Սովորական տեքստի յուրաքանչյուր տառ, սիմվոլ 1 բայթ է = 8 բիթ:
+'''
+from symtable import Symbol
+
+
+binary_text = "0101011101101000011001010110111000100000010010010010000001110111011100100110111101110100011001010010000001110100011010000110100101110011001000000110001101101111011001000110010100101100001000000110111101101110011011000111100100100000010001110110111101100100001000000110000101101110011001000010000001001001001000000111010101101110011001000110010101110010011100110111010001101111011011110110010000100000011101110110100001100001011101000010000001001001001000000110010001101001011001000010111000100000010011100110111101110111001000000110111101101110011011000111100100100000010001110110111101100100001000000110101101101110011011110111011101110011"
+
+
+'''100               ^                     011        =        111
+  4                                        3                       7
+(0*2) + 1 =1            (0*2) + 0 = 0         (0*2)+1=1
+(1*2) + 0 = 2            (0*2)+ 1 =1          (1*2)+1 = 3
+(2* 2)+ 0 = 2            (1*2)+1 = 3           (3*2)+1 = 7'''
+
+def binary_to_decimal(binaa):
+    res =0
+    for i in binaa : 
+        res = (res * 2 ) + int(i)
+    return res
+
+
+def decod(binary_text):
+    result_text = ""
+    start_index = 0
+    end_index = 8
+   # print(binary_text[start_index:end_index])
+    while start_index < len(binary_text):
+        binary_symbol = binary_text[start_index:end_index]
+        decimal_value = binary_to_decimal(binary_symbol)
+        symbol = chr(decimal_value)
+        result_text += symbol
+        start_index += 8
+        end_index += 8    
+    return result_text
+        
+
+print(decod(binary_text))   

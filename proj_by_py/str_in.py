@@ -11,9 +11,16 @@ item = "Computer Name"
 #print(item.split())
 #print(item.replace("Computer Name","computer name eman  retupmoc"))
 #revers_itm = item[::-1]
-if 
-for i in item :
-    print(i)
 
-print(item.replace([0]))
+
+print(item.__ne__())
 #print(revers_itm)
+print(item.join(["i"]))
+
+'''
+if x == "+" :# a == int() or float():
+        return a + b
+    if x == "/" :# a == int() or float():
+        return a / b
+    if x == "*" :# a == int() or float():
+        return a * b  '''

@@ -23,7 +23,7 @@ if x == "+" :# a == int() or float():
     if x == "/" :# a == int() or float():
         return a / b
     if x == "*" :# a == int() or float():
-        return a * b  '''
+        return a * b  
 
 binary_text = "0101011101101000011001010110111000100000010010010010000001110111011100100110111101110100011001010010000001110100011010000110100101110011001000000110001101101111011001000110010100101100001000000110111101101110011011000111100100100000010001110110111101100100001000000110000101101110011001000010000001001001001000000111010101101110011001000110010101110010011100110111010001101111011011110110010000100000011101110110100001100001011101000010000001001001001000000110010001101001011001000010111000100000010011100110111101110111001000000110111101101110011011000111100100100000010001110110111101100100001000000110101101101110011011110111011101110011"
 
@@ -48,23 +48,49 @@ def decod(binary_text):
         start_index += 8
         #end_index += 8    
     return result_text
-        
 
-print(decod(binary_text))   
+print(decod(binary_text))''' 
+
 '''ստեղծել եմ ֆունկցիա որը հայտարարել եմ փոփոխականներ  
 result_text =  ""  որտեղ կգցեմ իմ դեքոդ եղած նշանը
   start_index =   միջակայքի համար սկիզբ   
 end_index =      միջակայքի համար վերջ
 ստեղծել ցիկլ եվ բաժանել 8բիթերի մեր երկուականի թվերը
 ցիկլի մեջ քանի դեռ մեր len(binary_text) > start_index 
-հետո սարքել եմ տասական համակարգ հետո սարքել եմ սիմվոլ chr(decimal_value) ավելացնելով  esult_text  ի մեջ եվ վերադարձրել արդյունքը'''
+հետո սարքել եմ տասական համակարգ հետո սարքել եմ սիմվոլ chr(decimal_value) ավելացնելով  
+esult_text  ի մեջ եվ վերադարձրել արդյունքը'''
+
+
+'''Итак, мы рассмотрели строковые методы split() и join(). Из этой статьи вы узнали следующее:
+
+    <string>.split (sep, maxsplit) разбивает исходную строку <string> по вхождениям разделителя sep, maxsplit раз.
+    <sep>.join(<iterable>) объединяет подстроки в итерируемый объект <iterable>, используя <sep> в качестве разделителя.'''
+##############################
+
+#txt = "Hello, welcome to my world."
+
+#x = txt.endswith(".")   naxadasutyun@ verjanum e kamayakan sinvolov kam barov
+
+# x = txt.find("welcome")  veradarcnum e elementneri qanak@ 7
+
+#txt = "For only {price:.7f} dollars!"
+#print(txt.format(price = 49))  # .7f === 49.0000000
+
+#myTuple = ("John", "Peter", "Vicky")
+#x = " ---".join(myTuple) ===  John ---Peter ---Vicky
+
+#txt = "banana"
+#x = txt.ljust(20)
+#print(x, "is my favorite fruit.")  == banana     <<20>>          is my favorite fruit.
+
+#txt = "I could eat bananas all day"
+#x = txt.rpartition("all")  nshvac sinvol arancin string  e sarqum 
+
+#txt = "ap.ple, bana.na, cherry"
+#x = txt.rsplit(".") . kpoxarini storaketov ev karancnacni 
 
 
 
-
-
-
-
-
-
+#txt = "Welcome to my world"
+#x = txt.title()  # arajin tarery sarqum e mecatar
 

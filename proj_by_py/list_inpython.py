@@ -48,6 +48,19 @@ b = 7
 c = 10
 Գրել ֆունկցիաներ, որոնցից մեկը կհաշվի տրված եռանկյան միջին գծերի երկարությունները, իսկ մյուսը՝ 
  դրանցով կազմված եռանկյան պարագիծը։ Ֆունկցիաները կանչել main()-ից։'''
-text = input("text:")
-text = text.rsplit(" ")
-print(text)
+from cmath import sqrt
+if __name__ == "__main__":
+
+ def par(a=14,b=7,c=10):
+    res =a/2 + b/2 +c/2
+    return res # պարագիծ հավասար է երեք կողմերի գւմարին 
+ 
+def mijnagci(a=14,b=7,c=10):
+  a= a/2
+  b =b/2
+  c= c/2
+  return a,b,c
+#if __name__ == "__main__":
+
+#print("---",par()) # print կանի միայն այն ժամանակ երփ հենց այս կոդը կաշխատացնեմ,
+#print("+++",mijnagci())

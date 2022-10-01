@@ -3,3 +3,5 @@ mask =  3
 resu = flags ^ mask   # 100 == 0100    4
 print(resu)           #  11 == 0011    3
 print(bin(resu))      # resu== 0111    7  
+f = '   kokok k oo k o k      k k k                  ,,,,,, '
+print(f.strip(","))

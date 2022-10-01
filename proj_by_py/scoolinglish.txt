@@ -8,8 +8,8 @@ we are in the garden     մենք           we are not in the garden            
 you are in the garden    դուք           you are not in the garden            are you in garden        
 they are in the garden   նրանք           they are not in the garden           are they in the garden      
 
-
-i heve not got  a pen 
+                                
+i heve not got  a pen              doys he washes his car 
 i heve got  a pen 
 heve i got a pen
 
@@ -85,5 +85,19 @@ the teacher  giving an english lesson
 we siting in the classrum
 i  am puting the book into  my bag
 the woman is waqshing her haer   կինը լվանում է իր մազերը
+
+
+
+ներկա անորոշ
+      ներկա                 հարցաակն                    ժխտական
+he washes his car    does he wash   his car    he  does not wash his car 
+
+
+
+
+they answer in class       do  they answer in class     they do noy answer in class
+
+
+
 
 

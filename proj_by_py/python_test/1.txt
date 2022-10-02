@@ -1,5 +1,5 @@
 Movses,Seyranyan,30,barman
-Movses,Sargsyan,30,barman
+Karen,Sargsyan,30,barman
 Arsen,Mkrtchyan,31,barman
 Ani,Saratikyan,12,schoolgirl
 Heghine,Hakhverdyan,50,teacher

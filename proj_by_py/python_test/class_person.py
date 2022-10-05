@@ -1,16 +1,19 @@
+from ast import main
+
+
 class Person:
-    def __init__(self, my_array):
-           self.first_name = my_array[0]
-           self.last_name = my_array[1]
-           self.age = int(my_array[2])
-           self.profession = my_array[3]
+    def __init__(self, aray_list):
+           self.first_name = aray_list[0]
+           self.last_name = aray_list[1]
+           self.age = int(aray_list[2])
+           self.profession = aray_list[3]
 file_phat = "1.txt"
 def file_path_open_create_list(file_path):
     person_list = []
     with open(file_path,"r") as f:
-        for temp in f.readlines():
-            temp = temp.strip().split(',')
-            person_list.append(Person(temp))
+        for i in f.readlines():
+            i = i.strip().split(',')
+            person_list.append(Person(i))
         return person_list
 persons = file_path_open_create_list(file_phat)
 def filter_by_age_and_profession(persons, age, profession,) :
@@ -22,6 +25,5 @@ def filter_by_age_and_profession(persons, age, profession,) :
                 res += persons[j].first_name
                 res += ","
         return res
-print(filter_by_age_and_profession(persons,20,"bar"))
-for i in range(len(persons)):
-    print(persons[i].first_name)
+if __name__ == "__main__":
+    main()

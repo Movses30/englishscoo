@@ -1,5 +1,5 @@
 
-class Person:
+class persiom:
     def __init__(self, my_array):
             self.first_name = my_array[0]
             self.last_name = my_array[1]
@@ -11,8 +11,7 @@ def file_path_open_create_list(file_path):
     with open(file_path,"r") as f:
         for i in f.readlines():
             i = i.strip().split(',')
-            person_list.append(Person(i))
-        print(person_list.count(3))
+            person_list.append(persiom(i))
         return person_list
 persons = file_path_open_create_list(file_path)
 def filter_by_age_and_profession(persons, age, profession,) :
@@ -24,6 +23,6 @@ def filter_by_age_and_profession(persons, age, profession,) :
                 res += persons[j].first_name
                 res += ","
         return res
-
+print(filter_by_age_and_profession(persons,20,"barman"))
 
 

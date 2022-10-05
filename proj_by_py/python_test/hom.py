@@ -26,5 +26,3 @@ def filter_by_age_and_profession(persons, age, profession,) :
                 res += ", "
         return res
 
-print(filter_by_age_and_profession(persons,12,"barman"))
-print(parse_person_list_from_file(file_path))
